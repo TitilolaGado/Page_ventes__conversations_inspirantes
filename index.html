@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Conversations Inspirantes — le parcours de la Fondation Hystérésis pour transformer son potentiel en croissance professionnelle, visibilité, réseau et passage à l’action." />
+  <meta name="description" content="Conversations Inspirantes — un parcours de la Fondation Hystérésis pour clarifier sa trajectoire, valoriser son potentiel et accélérer sa progression professionnelle." />
+  <meta name="theme-color" content="#ED5312" />
   <title>Conversations Inspirantes — Fondation Hystérésis</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,459 +12,511 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="test-banner" role="note">
-    <strong>VERSION TEST — V2 ALIGNÉE</strong><span>•</span><span>Le compteur L’Ascension fonctionne localement dans ce navigateur.</span>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <div class="preview-banner" role="note">
+    <span>Version de présentation</span>
+    <strong>Conversations Inspirantes</strong>
   </div>
 
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#top" aria-label="Fondation Hystérésis — accueil de la page">
+      <a class="brand" href="#top" aria-label="Fondation Hystérésis — accueil">
         <img src="assets/logo-hysteresis.png" alt="Fondation Hystérésis" />
       </a>
-      <nav class="nav" aria-label="Navigation principale">
-        <a href="#aspirations">Ta situation</a>
-        <a href="#vision">Vision</a>
-        <a href="#experience">Expérience</a>
-        <a href="#offres">Offres</a>
-        <a href="#fondation">Fondation</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primaryNav" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="primaryNav" aria-label="Navigation principale">
+        <a href="#vision">Notre vision</a>
+        <a href="#experience">Le parcours</a>
+        <a href="#collectif">Mentorat & réseau</a>
+        <a href="#offres">Les offres</a>
         <a href="#faq">FAQ</a>
+        <a class="nav-support" href="#soutenir">Soutenir</a>
       </nav>
-      <a class="btn btn-small" href="#offres">Choisir mon parcours</a>
+
+      <a class="btn btn-small header-cta" href="#offres">Choisir mon parcours</a>
     </div>
   </header>
 
-  <main>
-    <!-- 1. HERO : promesse professionnelle immédiate -->
+  <main id="main">
+    <!-- HERO -->
     <section class="hero section-white">
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <span class="eyebrow">PROGRAMME CONVERSATIONS INSPIRANTES</span>
-          <h1>Transforme ce que tu sais déjà faire en <span>prochain cap professionnel.</span></h1>
-          <p class="hero-kicker">CLARIFIER ta trajectoire • RENDRE ta valeur visible • ACTIVER ton potentiel</p>
-          <p class="hero-lead">Que tu vises une <strong>promotion</strong>, une <strong>reconversion</strong>, une <strong>insertion professionnelle</strong>, le développement d’un projet ou un repositionnement, Conversations Inspirantes t’aide à comprendre ce qui peut débloquer la suite — puis à le mettre en mouvement.</p>
+          <span class="eyebrow">CONVERSATIONS INSPIRANTES</span>
+          <h1>Tu as du potentiel. <span>Fais-en un levier de croissance professionnelle.</span></h1>
+          <p class="hero-lead">Que tu vises une <strong>promotion</strong>, une <strong>reconversion</strong>, une <strong>insertion professionnelle</strong>, le développement d’un projet ou simplement un nouveau cap, Conversations Inspirantes t’aide à clarifier ta direction, mieux faire reconnaître ta valeur et transformer tes ressources en décisions et en actions concrètes.</p>
           <div class="hero-actions">
-            <a class="btn" href="#offres">Découvrir les deux parcours</a>
-            <a class="text-link" href="#aspirations">Est-ce pour moi ? →</a>
+            <a class="btn" href="#offres">Découvrir le parcours qui me correspond</a>
+            <a class="text-link" href="#situation">Comprendre l’expérience <span aria-hidden="true">→</span></a>
           </div>
-          <div class="micro-proof" aria-label="Composantes clés">
-            <span>Mentorat</span><span>Expérience collective</span><span>Réseau professionnel</span><span>Visibilité</span><span>Passage à l’action</span>
-          </div>
+          <ul class="hero-points" aria-label="Points forts du programme">
+            <li>Mentorat</li>
+            <li>Expérience collective</li>
+            <li>Réseau professionnel</li>
+            <li>Visibilité</li>
+            <li>Passage à l’action</li>
+          </ul>
         </div>
+
         <figure class="hero-media reveal">
-          <img src="assets/cohorte-groupe.jpg" alt="Bénéficiaires et participants réunis lors d’une activité de la Fondation Hystérésis" />
-          <figcaption>Des talents, des trajectoires, un collectif qui avance.</figcaption>
+          <img src="assets/cohorte-groupe.jpg" alt="Une cohorte de Conversations Inspirantes réunie autour d’une activité collective" />
+          <figcaption>Des talents, des trajectoires et un collectif qui avance.</figcaption>
         </figure>
       </div>
     </section>
 
-    <section class="statement section-orange">
+    <section class="statement section-orange" aria-label="Message clé">
       <div class="container statement-inner reveal">
+        <span>LE POINT DE BASCULE</span>
         <p>Ta prochaine évolution ne dépend pas seulement de ce que tu sais faire.</p>
         <strong>Elle dépend aussi de ta capacité à reconnaître ta valeur, la rendre visible, t’entourer et agir.</strong>
       </div>
     </section>
 
-    <!-- 2. IDENTIFICATION : formulation directe demandée -->
-    <section class="section section-white" id="aspirations">
+    <!-- SITUATION -->
+    <section class="section section-white" id="situation">
       <div class="container narrow reveal">
         <span class="eyebrow">TU AVANCES. MAIS VERS QUEL PROCHAIN CAP ?</span>
         <h2>Tu accumules des expériences, des compétences et des responsabilités. Tu sais que tu as quelque chose à apporter.</h2>
-        <p class="intro-large">Pourtant, ton évolution professionnelle peut sembler plus lente, moins lisible ou plus difficile à provoquer que tu ne l’imaginais.</p>
+        <p class="intro-large">Pourtant, ton prochain cap professionnel n’est pas toujours aussi clair qu’il pourrait l’être.</p>
+
         <div class="aspiration-list">
-          <p>Tu veux évoluer dans ton métier, prendre davantage de responsabilités ou préparer une <strong>promotion</strong>, mais tu ne sais pas toujours ce qu’il faut rendre plus visible ou plus affirmé.</p>
-          <p>Tu envisages une <strong>reconversion</strong> et tu as besoin de relier ton expérience, tes talents et tes aspirations pour choisir une direction crédible et stimulante.</p>
-          <p>Tu prépares ton <strong>insertion professionnelle</strong> et tu veux mieux parler de toi, de tes compétences, de ton potentiel et de la valeur que tu peux créer.</p>
-          <p>Tu portes un projet, plusieurs idées ou une ambition plus grande, mais tu as besoin d’un cap, de priorités, de mentorat et d’un réseau qui t’aide à accélérer le passage à l’action.</p>
+          <article><strong>Évolution & promotion</strong><p>Tu veux évoluer dans ton métier, accéder à davantage de responsabilités ou mieux faire reconnaître ta contribution.</p></article>
+          <article><strong>Reconversion</strong><p>Tu veux relier ton expérience, tes talents et tes aspirations pour choisir une direction crédible, cohérente et stimulante.</p></article>
+          <article><strong>Insertion professionnelle</strong><p>Tu veux mieux parler de toi, de tes compétences, de ton potentiel et de la valeur que tu peux créer.</p></article>
+          <article><strong>Projet & repositionnement</strong><p>Tu as besoin d’un cap, de priorités, de mentorat et d’un réseau qui t’aide à passer de l’intention à l’action.</p></article>
         </div>
-        <p class="callout-text">Tu n’as peut-être pas besoin de “plus de compétences”. Tu as peut-être besoin de mieux mobiliser celles que tu as déjà.</p>
+
+        <p class="callout-text">Et si le prochain plafond n’était pas seulement une question de compétence ? Il peut aussi se trouver dans la difficulté à nommer ta valeur, choisir une direction, dépasser certaines croyances, rendre ton parcours lisible, mobiliser les bonnes relations ou transformer tes intentions en actions régulières.</p>
       </div>
     </section>
 
-    <!-- 3. WHY -->
-    <section class="section split-section" id="vision">
+    <!-- VISION -->
+    <section class="section section-soft" id="vision">
       <div class="container split-grid">
         <figure class="editorial-photo reveal">
-          <img src="assets/atelier-prise-parole.jpg" alt="Temps d’échange et de réflexion lors d’une activité de la Fondation" />
+          <img src="assets/atelier-prise-parole.jpg" alt="Temps d’échange et de réflexion pendant une activité de la Fondation Hystérésis" />
         </figure>
+
         <div class="reveal">
           <span class="eyebrow">NOTRE VISION À LA FONDATION HYSTÉRÉSIS</span>
-          <h2>L’expertise et la compétence professionnelle sont nécessaires. Elles ne suffisent pas toujours.</h2>
-          <p>Nous croyons qu’une croissance professionnelle durable se construit à l’intersection de plusieurs dimensions : ce que tu sais faire, la manière dont tu te connais, la façon dont tu racontes ta valeur, les décisions que tu oses prendre et les personnes dont tu choisis de t’entourer.</p>
-          <p>Tu peux être compétent et rester invisible. Tu peux être expérimenté et hésiter à prendre ta place. Tu peux avoir du potentiel et manquer de direction, de réseau ou de confiance pour le transformer en opportunités.</p>
-          <p>C’est pourquoi Conversations Inspirantes relie <strong>connaissance de soi, posture professionnelle, visibilité, mentorat, expérience collective, réseau et mise en mouvement</strong>.</p>
-          <p class="vision-proof"><strong>Et c’est aussi ce que nous disent celles et ceux qui ont vécu le programme :</strong> les effets se prolongent dans leur manière de se positionner, de décider, de se rendre visibles et d’avancer.</p>
+          <h2>L’expertise et les compétences professionnelles sont nécessaires. Elles ne suffisent pas toujours.</h2>
+          <p>Grandir professionnellement, c’est aussi apprendre à mieux se connaître, reconnaître la valeur de ses expériences, comprendre ce qui nous freine, faire des choix plus conscients, mieux raconter sa contribution et savoir s’entourer pour avancer.</p>
+          <div class="formula-card" aria-label="Notre conviction">
+            <span>NOTRE CONVICTION</span>
+            <strong>COMPÉTENCES + CLARTÉ + POSTURE + MENTORAT + RÉSEAU + ACTION</strong>
+            <p>= une trajectoire professionnelle plus consciente et plus visible.</p>
+          </div>
+          <p>Le programme s’inspire des enseignements tirés de parcours professionnels, de transitions, de responsabilités et d’engagements vécus. Une idée revient avec force : <strong>les compétences ouvrent des portes ; la clarté, la posture, les mentors, le réseau et la capacité à se mettre en mouvement aident à les franchir.</strong></p>
         </div>
       </div>
     </section>
 
-    <section class="quote-band section-soft">
-      <div class="container narrow reveal">
-        <blockquote>« Ce module m’a permis de mieux définir mon identité professionnelle et de clarifier mes objectifs. »</blockquote>
-        <p class="quote-source">— Parole de bénéficiaire • attribution finale à valider</p>
+    <section class="quote-band">
+      <div class="container quote-layout reveal">
+        <div class="quote-mark" aria-hidden="true">“</div>
+        <blockquote>
+          « Ce programme m’a permis de mieux définir mon identité professionnelle et de clarifier mes objectifs. »
+          <cite>— Bénéficiaire, cohorte 2026 <span>• attribution/diffusion à valider</span></cite>
+        </blockquote>
       </div>
     </section>
 
-    <!-- 4. AVANT / APRÈS -->
+    <!-- AVANT / APRÈS -->
     <section class="section section-white" id="transformation">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="eyebrow">UN AVANT / APRÈS PROFESSIONNEL</span>
-          <h2>Ce que tu peux commencer à transformer dans ta trajectoire.</h2>
-          <p>Pas une promesse magique. Un déplacement concret dans ta manière de te connaître, te positionner, te rendre visible et agir.</p>
+          <span class="eyebrow">UN AVANT / APRÈS QUI SE VOIT DANS TA TRAJECTOIRE</span>
+          <h2>Ce que tu cherches à construire, concrètement.</h2>
+          <p>Le parcours ne garantit pas un résultat individuel. Il crée un cadre pour t’aider à décider, te positionner et agir avec plus de clarté.</p>
         </div>
+
         <div class="before-after reveal">
-          <div class="ba-head"><span>AVANT</span><span>APRÈS LE PARCOURS, TU CHERCHES À…</span></div>
-          <div class="ba-row"><p>Tu avances, mais sans cap professionnel suffisamment clair.</p><p>Prioriser une direction et identifier les prochaines étapes qui comptent vraiment.</p></div>
-          <div class="ba-row"><p>Tu sais que tu as de la valeur, mais tu as du mal à la nommer ou à la défendre.</p><p>Mettre des mots précis sur tes talents, tes compétences, tes expériences et ta contribution.</p></div>
-          <div class="ba-row"><p>Ton parcours est riche, mais ton récit professionnel reste dispersé.</p><p>Présenter ton histoire et ton positionnement avec davantage de cohérence et d’impact.</p></div>
-          <div class="ba-row"><p>Tu hésites à te rendre visible, à demander de l’aide ou à activer ton réseau.</p><p>Développer une visibilité plus alignée et mobiliser des relations utiles à ta progression.</p></div>
-          <div class="ba-row"><p>Tu as des idées, mais le passage à l’action reste irrégulier.</p><p>Transformer tes prises de conscience en priorités, décisions et actions professionnelles concrètes.</p></div>
+          <div class="ba-head"><span>AVANT</span><span>APRÈS : CE QUE TU CHERCHES À CONSTRUIRE</span></div>
+          <div class="ba-row"><p>Tu avances, mais sans cap professionnel suffisamment clair.</p><p>Tu identifies une direction plus lisible et les prochaines étapes à prioriser.</p></div>
+          <div class="ba-row"><p>Tu sais que tu as de la valeur, mais tu as du mal à la nommer ou à la défendre.</p><p>Tu mets des mots précis sur tes talents, compétences, expériences et singularité.</p></div>
+          <div class="ba-row"><p>Tu hésites entre promotion, reconversion, insertion, entrepreneuriat ou repositionnement.</p><p>Tu relies tes ambitions à des choix plus cohérents et à une feuille de route concrète.</p></div>
+          <div class="ba-row"><p>Ton parcours est riche, mais difficile à raconter.</p><p>Tu construis un récit professionnel plus cohérent, crédible et attractif.</p></div>
+          <div class="ba-row"><p>Tu hésites à te rendre visible ou à prendre davantage ta place.</p><p>Tu renforces ton positionnement, ta marque personnelle et ta capacité à parler de ta contribution.</p></div>
+          <div class="ba-row"><p>Tu avances souvent seul face à tes décisions.</p><p>Tu t’appuies sur du mentorat, une dynamique collective et un réseau qui élargissent tes perspectives.</p></div>
         </div>
       </div>
     </section>
 
-    <!-- 5. THEMES : proche de la progression d'Entreprendre Durablement mais texte original -->
+    <!-- EXPERIENCE -->
     <section class="section section-soft" id="experience">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="eyebrow">LES GRANDS LEVIERS DU PARCOURS</span>
-          <h2>Ta croissance professionnelle se travaille de l’intérieur… et se rend visible à l’extérieur.</h2>
+          <span class="eyebrow">CE QUE TU VAS VIVRE</span>
+          <h2>Une expérience qui relie réflexion, relation et action.</h2>
+          <p>Tu ne viens pas accumuler des contenus. Tu avances dans un parcours structuré qui t’aide à comprendre où tu en es, clarifier ce que tu veux, reconnaître ce que tu portes, travailler ce qui te freine et transformer cette compréhension en décisions plus concrètes.</p>
         </div>
-        <div class="theme-grid">
-          <article class="theme-card reveal"><span>01</span><h3>Vision & direction</h3><p>Faire le point, clarifier tes priorités et donner un cap plus lisible à ton avenir professionnel.</p></article>
-          <article class="theme-card reveal"><span>02</span><h3>Croyances & posture</h3><p>Identifier les freins invisibles qui limitent certaines décisions, prises de parole ou ambitions.</p></article>
-          <article class="theme-card reveal"><span>03</span><h3>Talents & contribution</h3><p>Relier ce que tu aimes, ce que tu sais faire, ce que tu peux apporter et la valeur que tu peux créer.</p></article>
-          <article class="theme-card reveal"><span>04</span><h3>Identité professionnelle</h3><p>Affiner ton positionnement, ton récit, ta biographie et la manière dont tu veux être reconnu.</p></article>
-          <article class="theme-card reveal"><span>05</span><h3>Visibilité & réseau</h3><p>Rendre ta valeur plus lisible, construire des relations et créer davantage de passerelles vers les opportunités.</p></article>
-          <article class="theme-card reveal"><span>06</span><h3>Action & continuité</h3><p>Passer de l’introspection aux décisions, puis des décisions à une feuille de route professionnelle concrète.</p></article>
+
+        <div class="experience-photo reveal">
+          <img src="assets/formation.jpg" alt="Séance de travail collective du programme Conversations Inspirantes" />
+          <span>Un espace d’écoute, de prise de recul et de mise en mouvement.</span>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card reveal"><span>01</span><div><h3>Faire le point pour mieux décider</h3><p>Tu prends du recul sur ton parcours, tes attentes et ta situation professionnelle. Tu identifies ce qui doit être consolidé, transformé ou réorienté.</p></div></article>
+          <article class="step-card reveal"><span>02</span><div><h3>Clarifier ta vision et ton avenir professionnel</h3><p>Tu travailles la direction que tu veux donner à ta carrière, ta reconversion, ton insertion ou ton projet et tu hiérarchises ce qui compte réellement.</p></div></article>
+          <article class="step-card reveal"><span>03</span><div><h3>Identifier ce qui freine ta progression</h3><p>Tu mets en lumière certaines croyances, habitudes ou peurs qui limitent tes décisions : perfectionnisme, peur de l’échec, besoin de validation, difficulté à demander de l’aide ou à prendre ta place.</p></div></article>
+          <article class="step-card reveal"><span>04</span><div><h3>Relier talents, compétences, aspirations et contribution</h3><p>Tu reconnais mieux ce que tu sais faire, ce que tu veux apporter et les environnements dans lesquels tu peux créer de la valeur.</p></div></article>
+          <article class="step-card reveal"><span>05</span><div><h3>Rendre ta valeur professionnelle plus visible</h3><p>Tu travailles ton identité professionnelle, ta marque personnelle, ta biographie, ton récit de parcours et ta présence dans les réseaux utiles à ta progression.</p></div></article>
+          <article class="step-card reveal"><span>06</span><div><h3>Transformer la prise de conscience en mouvement</h3><p>Tu fais le bilan, fixes tes priorités et identifies les actions à engager pour que le programme devienne un point de départ vers la suite.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="quote-band section-orange">
-      <div class="container narrow reveal">
-        <blockquote>« Je repars de ce parcours avec une version de moi-même plus claire sur ce qu’elle veut, et un projet concret. »</blockquote>
-        <p class="quote-source">— Parole de bénéficiaire • attribution finale à valider</p>
-      </div>
-    </section>
-
-    <!-- 6. HOW : l'expérience incluse -->
-    <section class="section section-white" id="inclus">
+    <!-- MENTORAT / RESEAU -->
+    <section class="section section-white" id="collectif">
       <div class="container image-story-grid">
         <div class="reveal">
-          <span class="eyebrow">L’EXPÉRIENCE QUE NOUS ALLONS VIVRE ENSEMBLE</span>
-          <h2>Tu ne suis pas seulement des contenus. Tu avances dans un écosystème.</h2>
-          <p>Le programme combine apprentissage, exercices, échanges, accompagnement et mise en réseau pour que tes prises de conscience deviennent utiles à ta vie professionnelle.</p>
-          <ul class="check-list included-list">
-            <li><strong>Un parcours pédagogique structuré</strong> autour de la vision, des croyances, de l’Ikigai, de la marque personnelle, de la biographie, de la visibilité et du bilan.</li>
-            <li><strong>Des exercices et productions concrètes</strong> pour appliquer les apprentissages à ta propre trajectoire.</li>
-            <li><strong>Des temps de mentorat et d’accompagnement</strong> pour prendre du recul, challenger tes choix et accélérer le passage à l’action.</li>
-            <li><strong>Une expérience collective</strong> pour partager tes avancées, tes questions, tes déclics et apprendre aussi des parcours des autres.</li>
-            <li><strong>Un réseau professionnel qui se construit</strong> au fil des échanges, de l’entraide, des mises en relation et des opportunités.</li>
-            <li><strong>Une feuille de route de sortie</strong> pour poursuivre ta progression au-delà du programme.</li>
+          <span class="eyebrow">MENTORAT • EXPÉRIENCE COLLECTIVE • RÉSEAU</span>
+          <h2>Tu n’avances pas seul.</h2>
+          <p class="intro-large">Une trajectoire professionnelle ne se construit pas uniquement avec des outils. Elle se construit aussi grâce aux bonnes conversations, aux regards qui nous déplacent, aux mentors qui nous challengent et aux relations qui ouvrent de nouvelles perspectives.</p>
+          <ul class="check-list">
+            <li><strong>Des temps de mentorat et d’accompagnement</strong> pour prendre du recul, challenger tes choix et faciliter le passage de l’intention à l’action.</li>
+            <li><strong>Une expérience collective</strong> où tu peux partager tes avancées, tes questions, tes déclics et tes difficultés sans rester seul face à ton cheminement.</li>
+            <li><strong>Des regards croisés</strong> qui t’aident à voir dans ton parcours des ressources, des possibilités ou des angles que tu n’aurais peut-être pas identifiés seul.</li>
+            <li><strong>Un réseau</strong> qui se construit autour de la confiance, du partage d’expérience, de l’entraide et de la volonté commune de progresser professionnellement.</li>
           </ul>
-          <p class="fine-print">Les formats exacts de mentorat, de sessions collectives et d’accès aux ressources sont précisés à l’ouverture de chaque cohorte.</p>
         </div>
-        <figure class="reveal"><img src="assets/mentorat-collectif.jpg" alt="Intervenant échangeant avec un groupe de bénéficiaires pendant une session collective" /></figure>
+        <figure class="story-photo reveal">
+          <img src="assets/mentorat-collectif.jpg" alt="Temps collectif de mentorat du programme Conversations Inspirantes" />
+          <figcaption>Des temps collectifs qui nourrissent le mentorat, la confiance et le réseau.</figcaption>
+        </figure>
       </div>
     </section>
 
-    <section class="quote-band section-soft">
-      <div class="container narrow reveal">
-        <blockquote>« J’ai été particulièrement frappée par le programme de mentorat […] qui démontre que la Fondation a à cœur l’atteinte des objectifs fixés par chaque bénéficiaire. »</blockquote>
-        <p class="quote-source">— Chimène FASSINOU-GANGO • témoignage issu d’un document de la Fondation • diffusion finale à confirmer</p>
+    <section class="quote-band quote-band-dark">
+      <div class="container quote-layout reveal">
+        <div class="quote-mark" aria-hidden="true">“</div>
+        <blockquote>
+          « J’ai été particulièrement frappée par le programme de mentorat […] qui démontre que la Fondation a à cœur l’atteinte des objectifs fixés par chaque bénéficiaire au début du programme. »
+          <cite>— Chimène • Lauréate 2025</cite>
+        </blockquote>
       </div>
     </section>
 
-    <!-- 7. DETAIL DU PARCOURS -->
-    <section class="section section-white" id="parcours">
+    <!-- BENEFICES -->
+    <section class="section section-soft" id="benefices">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="eyebrow">LE PARCOURS EN 6 ÉTAPES</span>
-          <h2>De la connaissance de soi à la mise en mouvement professionnelle.</h2>
+          <span class="eyebrow">DES REPÈRES CONCRETS</span>
+          <h2>Tu ne repars pas seulement inspiré(e).</h2>
+          <p>Tu repars avec des éléments que tu peux continuer à mobiliser dans ta trajectoire professionnelle.</p>
         </div>
-        <div class="steps-grid">
-          <article class="step-card reveal"><span>01</span><h3>Faire le point</h3><p>Tu prends du recul sur ton parcours, tes attentes, ta situation professionnelle et ce qui mérite d’évoluer.</p></article>
-          <article class="step-card reveal"><span>02</span><h3>Clarifier ta vision</h3><p>Tu travailles la direction que tu veux donner à ta carrière, ta reconversion, ton insertion ou ton projet.</p></article>
-          <article class="step-card reveal"><span>03</span><h3>Identifier tes freins</h3><p>Tu mets en lumière certaines croyances, habitudes ou peurs qui limitent tes décisions et ton passage à l’action.</p></article>
-          <article class="step-card reveal"><span>04</span><h3>Relier talents & contribution</h3><p>Avec l’Ikigai et d’autres exercices, tu reconnais mieux ce que tu sais faire, ce que tu veux apporter et les environnements où tu peux créer de la valeur.</p></article>
-          <article class="step-card reveal"><span>05</span><h3>Rendre ta valeur visible</h3><p>Tu travailles ton identité professionnelle, ta biographie, ton positionnement, ton réseau et ta présence professionnelle.</p></article>
-          <article class="step-card reveal"><span>06</span><h3>Construire la suite</h3><p>Tu fais le bilan, fixes des priorités et définis des actions pour que le parcours devienne un point d’appui vers la suite.</p></article>
-        </div>
-      </div>
-    </section>
 
-    <!-- 8. AGENDA / OUVERTURE -->
-    <section class="agenda-band section-orange">
-      <div class="container reveal">
-        <span class="eyebrow light">PROCHAINE COHORTE</span>
-        <div class="agenda-grid">
-          <div><strong>Conversations Inspirantes</strong><p>Candidatures ouvertes uniquement pendant la période annoncée sur les réseaux sociaux et dans les médias.</p><span>[DATE D’OUVERTURE À COMPLÉTER]</span></div>
-          <div><strong>L’Ascension</strong><p>Inscription directe dans la limite de 10 places confirmées par cohorte.</p><span>[DATE DE PROCHAINE COHORTE À COMPLÉTER]</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 9. INVESTISSEMENT / DEUX OFFRES -->
-    <section class="section section-soft" id="offres">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">INVESTISSEMENT & MODALITÉS</span>
-          <h2>Une même philosophie. Deux niveaux d’engagement.</h2>
-          <p>Choisis la voie qui correspond à ton moment professionnel, à ton besoin d’accompagnement et à la manière dont tu veux avancer.</p>
-        </div>
-        <div class="offers-grid">
-          <article class="offer-card reveal">
-            <div class="offer-top"><span class="offer-label">PARCOURS DE RÉFÉRENCE</span><h3>Conversations Inspirantes</h3><p class="offer-sub">Sur candidature • 50 bénéficiaires sélectionnés par cohorte</p></div>
-            <div class="price-line"><strong>0 FCFA</strong><span>de contribution financière pour les bénéficiaires retenus</span></div>
-            <p>Grâce au soutien des donateurs et sponsors de la Fondation, cette voie est accessible sans contribution financière. Elle reste sélective afin de préserver la qualité de l’accompagnement.</p>
-            <ul class="check-list compact">
-              <li>Tu prends connaissance de l’ouverture de la cohorte.</li>
-              <li>Tu déposes ta candidature sur cette page.</li>
-              <li>La Fondation étudie les candidatures.</li>
-              <li>50 bénéficiaires sont retenus pour la cohorte.</li>
-            </ul>
-            <button class="btn full" data-open-dialog="candidateDialog">Je candidate</button>
-            <p class="offer-note">Prochaine ouverture : [date à compléter]</p>
-          </article>
-
-          <article class="offer-card featured reveal">
-            <div class="offer-top"><span class="offer-label">PARCOURS AVANCÉ</span><h3>Conversations Inspirantes <em>L’Ascension</em></h3><p class="offer-sub">10 places maximum par cohorte</p></div>
-            <div class="seat-panel" aria-live="polite">
-              <div class="seat-head"><span>Places disponibles</span><strong><span class="remaining-count">10</span>/10</strong></div>
-              <div class="seat-bar"><div class="seat-bar-fill"></div></div>
-              <div class="seat-dots" aria-hidden="true"></div>
-            </div>
-            <div class="price-line"><strong>90 000 FCFA</strong><span>contribution demandée aux activités de la Fondation</span></div>
-            <p>Un parcours avancé pour <strong>approfondir et accélérer la mise en mouvement de ton potentiel et de ton excellence</strong>, dans un groupe volontairement limité.</p>
-            <ul class="check-list compact">
-              <li>Approfondir tes décisions, ton positionnement et ta trajectoire.</li>
-              <li>Accélérer le passage de l’intention à l’action.</li>
-              <li>Bénéficier d’un cadre plus resserré et exigeant.</li>
-              <li>Réserver ta place tant qu’il reste des disponibilités.</li>
-            </ul>
-            <button class="btn full ascension-register" data-open-dialog="ascensionDialog">Je réserve ma place — <span class="remaining-count">10</span> restante(s)</button>
-            <p class="offer-note">Les inscriptions ferment automatiquement lorsque les 10 places sont prises.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- 10. PREUVES -->
-    <section class="section section-white" id="preuves">
-      <div class="container split-grid reverse">
-        <div class="reveal">
-          <span class="eyebrow">DES TRANSFORMATIONS QUI PEUVENT DEVENIR CONCRÈTES</span>
-          <h2>De la réflexion à la visibilité, puis aux opportunités.</h2>
-          <p>Les retours de cohorte montrent que certains bénéficiaires prolongent le travail de clarification par des actions professionnelles concrètes : amélioration du CV et du profil LinkedIn, candidatures, mobilisation du mentorat, développement du réseau ou recherche de missions.</p>
-          <div class="proof-card"><strong>Visibilité professionnelle</strong><p>Une bénéficiaire a renforcé son CV et son profil LinkedIn, puis obtenu une nouvelle opportunité professionnelle.</p></div>
-          <div class="proof-card"><strong>Mentorat & passage à l’action</strong><p>Une autre bénéficiaire a signé un premier contrat en assistance virtuelle après une candidature accompagnée par du mentorat.</p></div>
-          <p class="fine-print">Ces exemples illustrent des trajectoires individuelles et ne constituent pas une garantie de résultat.</p>
-        </div>
-        <figure class="editorial-photo reveal"><img src="assets/formation.jpg" alt="Session de formation et de transmission avec des bénéficiaires" /></figure>
-      </div>
-    </section>
-
-    <section class="quote-band section-soft">
-      <div class="container narrow reveal">
-        <blockquote>« Ce parcours m’a permis de changer de trajectoire, de tracer une feuille de route pour ma vie personnelle et professionnelle. »</blockquote>
-        <p class="quote-source">— Parole de bénéficiaire • attribution finale à valider</p>
-      </div>
-    </section>
-
-    <!-- 11. RESULTATS ATTENDUS -->
-    <section class="section section-white">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">À LA FIN DE CETTE AVENTURE</span>
-          <h2>Tu ne repars pas seulement inspiré. Tu repars mieux équipé pour avancer professionnellement.</h2>
-        </div>
         <div class="outcomes-grid">
-          <p class="reveal"><strong>01</strong> Tu comprends mieux ton prochain cap professionnel.</p>
-          <p class="reveal"><strong>02</strong> Tu sais mieux nommer, raconter et défendre ta valeur.</p>
-          <p class="reveal"><strong>03</strong> Tu identifies les freins qui ralentissent certaines décisions.</p>
-          <p class="reveal"><strong>04</strong> Tu disposes d’outils et de productions réutilisables pour ta visibilité.</p>
-          <p class="reveal"><strong>05</strong> Tu sais mieux mobiliser le mentorat, le collectif et ton réseau.</p>
-          <p class="reveal"><strong>06</strong> Tu repars avec des priorités et des actions professionnelles à poursuivre.</p>
+          <article class="outcome-card reveal"><span>01</span><h3>Une vision plus claire</h3><p>De ta trajectoire, de tes priorités et des décisions qui méritent ton attention.</p></article>
+          <article class="outcome-card reveal"><span>02</span><h3>Une cartographie de tes ressources</h3><p>Talents, compétences, valeurs, expériences et aspirations mieux identifiés.</p></article>
+          <article class="outcome-card reveal"><span>03</span><h3>Un positionnement plus lisible</h3><p>Une biographie structurée, un récit plus cohérent et des repères pour parler de ta valeur.</p></article>
+          <article class="outcome-card reveal"><span>04</span><h3>Une feuille de route</h3><p>Des pistes pour ta visibilité, ton réseau et tes prochaines actions professionnelles.</p></article>
+          <article class="outcome-card reveal"><span>05</span><h3>Plus de confiance et de légitimité</h3><p>Pour parler de tes ambitions, prendre ta place et faire des choix plus conscients.</p></article>
+          <article class="outcome-card reveal"><span>06</span><h3>Un collectif qui soutient</h3><p>Le sentiment d’être entouré, challengé et soutenu plutôt que d’avancer seul.</p></article>
+        </div>
+
+        <p class="legal-note reveal">Selon ton point de départ, ces acquis peuvent soutenir une promotion, une reconversion, une insertion professionnelle, le développement d’un projet, une prise de responsabilité ou un repositionnement. Le programme ne garantit pas un emploi, une promotion ou un revenu.</p>
+      </div>
+    </section>
+
+    <!-- PREUVES -->
+    <section class="section section-white" id="preuves">
+      <div class="container split-grid split-grid-reverse">
+        <figure class="editorial-photo reveal">
+          <img src="assets/mise-en-pratique.jpg" alt="Exercice de mise en pratique pendant une activité de Conversations Inspirantes" />
+        </figure>
+        <div class="reveal">
+          <span class="eyebrow">QUAND LA TRANSFORMATION DEVIENT CONCRÈTE</span>
+          <h2>Des prises de conscience qui peuvent ouvrir de nouvelles actions.</h2>
+          <p>Les retours de cohorte montrent que certains bénéficiaires ont prolongé le travail de clarification par des actions de visibilité, de candidature et de mobilisation du mentorat.</p>
+          <div class="case-card">
+            <span>VISIBILITÉ PROFESSIONNELLE</span>
+            <h3>Renforcer son CV et sa présence professionnelle</h3>
+            <p>Un suivi de cohorte rapporte le renforcement d’un CV et d’un profil LinkedIn, suivi de l’obtention d’un poste dans une ONG et du financement d’un projet après consultation du profil.</p>
+          </div>
+          <div class="case-card">
+            <span>PASSAGE À L’ACTION</span>
+            <h3>Candidater avec l’appui d’un mentor</h3>
+            <p>Une bénéficiaire a candidaté à une opportunité avec l’appui d’un mentor et a signé son premier contrat en tant qu’assistante virtuelle.</p>
+          </div>
+          <p class="legal-note">Ces situations illustrent la logique recherchée ; elles ne constituent pas une promesse de résultat individuel.</p>
         </div>
       </div>
     </section>
 
-    <!-- 12. QUALIFICATION -->
-    <section class="section qualify section-soft" id="pour-toi">
+    <!-- QUALIFICATION -->
+    <section class="section section-soft" id="pour-qui">
       <div class="container qualify-grid">
-        <div class="reveal">
-          <span class="eyebrow">CETTE AVENTURE EST POUR TOI SI…</span>
-          <ul class="check-list big">
+        <div class="qualify-card reveal">
+          <span class="eyebrow">C’EST POUR TOI SI…</span>
+          <h2>Tu veux faire évoluer ta trajectoire avec intention.</h2>
+          <ul class="check-list">
             <li>tu veux donner une direction plus claire à ton avenir professionnel ;</li>
             <li>tu veux mieux valoriser tes compétences, expériences, talents et singularité ;</li>
             <li>tu envisages une promotion, une reconversion, une insertion, un projet entrepreneurial ou un repositionnement ;</li>
-            <li>tu veux mieux parler de ton parcours et de la valeur que tu peux apporter ;</li>
-            <li>tu es prêt à questionner certaines croyances ou habitudes qui freinent ton passage à l’action ;</li>
-            <li>tu veux progresser dans un cadre nourri par le mentorat, le collectif et un réseau professionnel solide.</li>
+            <li>tu veux mieux parler de toi, de ton parcours et de la valeur que tu peux apporter ;</li>
+            <li>tu es prêt(e) à questionner certaines croyances ou habitudes qui freinent ton passage à l’action ;</li>
+            <li>tu veux avancer dans un cadre nourri par le mentorat, les échanges et le réseau.</li>
           </ul>
         </div>
-        <div class="reveal not-for-you">
+        <div class="qualify-card qualify-muted reveal">
           <span class="eyebrow">CE N’EST PROBABLEMENT PAS POUR TOI SI…</span>
+          <h2>Tu cherches une solution passive ou un résultat garanti.</h2>
           <ul class="cross-list">
-            <li>tu recherches uniquement du contenu à consommer sans mise en pratique ;</li>
-            <li>tu attends une solution instantanée, un emploi, une promotion ou un revenu garanti ;</li>
-            <li>tu ne souhaites pas consacrer du temps aux exercices, aux échanges ou à ta réflexion ;</li>
-            <li>tu recherches uniquement une formation technique ou certifiante sans travail sur ton positionnement professionnel ;</li>
-            <li>tu ne souhaites pas remettre en question certaines habitudes ni t’ouvrir à l’expérience collective.</li>
+            <li>tu recherches uniquement du contenu à consommer sans faire les exercices ni te mettre en mouvement ;</li>
+            <li>tu attends une solution instantanée, une promotion, un emploi ou un revenu garanti ;</li>
+            <li>tu ne souhaites pas prendre le temps de réfléchir à ton parcours, tes choix et tes priorités ;</li>
+            <li>tu recherches uniquement une formation technique ou certifiante sans travail sur ton positionnement et ta trajectoire.</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <!-- 13. QUI SOMMES-NOUS ? -->
-    <section class="section foundation section-white" id="fondation">
-      <div class="container split-grid">
-        <figure class="editorial-photo reveal"><img src="assets/communaute.jpg" alt="Communauté de participantes réunies lors d’une activité de la Fondation" /></figure>
+    <!-- FONDATION -->
+    <section class="section section-white" id="fondation">
+      <div class="container image-story-grid">
+        <figure class="story-photo reveal">
+          <img src="assets/communaute.jpg" alt="Communauté de la Fondation Hystérésis réunie lors d’une activité" />
+          <figcaption>Une communauté engagée pour accompagner les trajectoires et faire émerger les potentiels.</figcaption>
+        </figure>
         <div class="reveal">
-          <span class="eyebrow">POURQUOI LA FONDATION HYSTÉRÉSIS ?</span>
-          <h2>Une vision nourrie par l’expérience, les transitions et la volonté de faire émerger les talents.</h2>
-          <p>La Fondation Hystérésis part d’une conviction : le potentiel ne produit pas tout son impact lorsqu’il reste invisible, dispersé ou isolé.</p>
-          <p>Conversations Inspirantes a été conçu comme un espace pour prendre du recul sur son parcours, structurer sa vision, renforcer son positionnement et créer des relations qui soutiennent la progression professionnelle.</p>
-          <p>L’approche s’inspire aussi des enseignements tirés des parcours des dirigeants de la Fondation : évolutions professionnelles, responsabilités, transitions, engagement et construction de réseaux — sans faire de ces expériences un modèle unique à reproduire.</p>
-          <p>Notre intention est de créer les conditions pour que chacun puisse mieux reconnaître sa valeur, la structurer, la rendre visible et la transformer en contribution.</p>
+          <span class="eyebrow">POURQUOI LA FONDATION HYSTÉRÉSIS PORTE CE PROGRAMME</span>
+          <h2>Mieux se comprendre pour mieux décider. Mieux se positionner pour mieux être reconnu. Mieux s’entourer pour mieux avancer.</h2>
+          <p>La Fondation Hystérésis part d’une conviction : le potentiel ne produit pas tout son impact lorsqu’il reste invisible, dispersé, freiné par le doute ou privé d’un environnement qui aide à grandir.</p>
+          <p>Conversations Inspirantes a été conçu comme un espace pour prendre du recul sur son parcours, structurer sa vision, renforcer sa posture professionnelle, mieux valoriser ce que l’on porte et rencontrer des personnes capables de soutenir une nouvelle étape.</p>
+          <p>Le programme est nourri par l’expérience de la Fondation et par les enseignements tirés des parcours professionnels et d’engagement de ses dirigeants, sans faire de leur histoire le centre de l’offre.</p>
         </div>
       </div>
     </section>
 
-    <!-- 14. FAQ -->
+    <!-- OFFRES -->
+    <section class="section offers-section" id="offres">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <span class="eyebrow">CHOISIS TON PARCOURS</span>
+          <h2>Deux façons de vivre Conversations Inspirantes.</h2>
+          <p>Un même objectif : faire grandir ton potentiel et accélérer ta progression professionnelle. Deux niveaux d’accompagnement, selon là où tu en es aujourd’hui et la manière dont tu souhaites avancer.</p>
+        </div>
+
+        <div class="offers-grid">
+          <!-- CI -->
+          <article class="offer-card offer-standard reveal">
+            <div class="offer-top">
+              <span class="offer-badge">LE PARCOURS DE RÉFÉRENCE</span>
+              <h3>Conversations Inspirantes</h3>
+              <p class="offer-promise">Clarifie ta trajectoire. Révèle ta valeur. Construis la prochaine étape de ton avenir professionnel.</p>
+              <div class="offer-price"><strong>GRATUIT</strong><span>pour les bénéficiaires sélectionnés</span></div>
+              <p class="offer-support">Aucune contribution financière n’est demandée, grâce au soutien des généreux donateurs et sponsors de la Fondation.</p>
+              <div class="offer-meta"><span>3 mois</span><span>Hybride</span><span>50 bénéficiaires</span></div>
+            </div>
+
+            <div class="offer-body">
+              <div class="offer-section"><h4>Pour toi si…</h4><p>Tu veux clarifier ta trajectoire, mieux valoriser tes ressources et entrer dans une dynamique structurée de progression professionnelle.</p></div>
+              <div class="offer-section"><h4>Ce que tu vas vivre</h4>
+                <ul class="feature-list">
+                  <li>Parcours structuré avec des contenus en ligne</li>
+                  <li><strong>1 session de coaching collectif</strong></li>
+                  <li>Renforcement en outils numériques et en IA</li>
+                  <li>Travail sur ta visibilité professionnelle</li>
+                  <li><strong>1 à 2 rencontres en présentiel</strong></li>
+                  <li><strong>Mentorat groupé</strong></li>
+                  <li><strong>Suivi pendant un an</strong></li>
+                </ul>
+              </div>
+              <div class="access-box"><span>ACCÈS SUR CANDIDATURE</span><p>Les candidatures sont ouvertes uniquement à certaines périodes. Une sélection rigoureuse permet de retenir <strong>50 bénéficiaires par cohorte</strong>.</p></div>
+              <div class="offer-date"><small>PROCHAINE OUVERTURE</small><strong>15 novembre 2026</strong></div>
+            </div>
+
+            <div class="offer-footer">
+              <a class="btn full ci-primary-action" href="#" data-action="ci">Être informé(e) de l’ouverture</a>
+              <p class="offer-note ci-action-note">Le bouton de candidature sera activé à l’ouverture.</p>
+            </div>
+          </article>
+
+          <!-- ASCENSION -->
+          <article class="offer-card offer-premium reveal">
+            <div class="premium-ribbon">ACCOMPAGNEMENT PRIVILÉGIÉ</div>
+            <div class="offer-top">
+              <span class="offer-badge">LE PARCOURS AVANCÉ</span>
+              <h3>Conversations Inspirantes <em>L’Ascension</em></h3>
+              <p class="offer-promise">Va plus loin. Travaille plus profondément sur tes objectifs. Accélère la mise en mouvement de ton potentiel et de ton excellence.</p>
+              <div class="offer-price"><strong>90 000 FCFA</strong><span>Contribution aux activités de la Fondation</span></div>
+              <div class="offer-meta"><span>3 mois</span><span>Hybride</span><span>10 personnes max.</span></div>
+            </div>
+
+            <div class="offer-body">
+              <div class="offer-section"><h4>Pour toi si…</h4><p>Tu veux aller plus loin dans ton évolution professionnelle, travailler concrètement sur tes objectifs et bénéficier d’un accompagnement à effectif réduit, plus proche et plus personnalisé.</p></div>
+              <div class="offer-section"><h4>Une expérience plus intensive</h4>
+                <ul class="feature-list">
+                  <li>Parcours structuré avec des contenus en ligne</li>
+                  <li><strong>4 sessions de coaching collectif</strong></li>
+                  <li>Renforcement en outils numériques et en IA</li>
+                  <li>Travail approfondi sur ta visibilité professionnelle</li>
+                  <li><strong>3 rencontres en présentiel</strong></li>
+                  <li><strong>Mentorat individuel</strong></li>
+                  <li><strong>2 heures de coaching individuel</strong></li>
+                  <li>Ressources et contenus complémentaires partagés chaque semaine</li>
+                  <li>Disponibilité digitale entre les sessions</li>
+                  <li>Sollicitations individuelles possibles</li>
+                  <li><strong>Suivi pendant un an</strong></li>
+                </ul>
+              </div>
+
+              <div class="access-box premium-access"><span>OUVERT À TOUS • SANS PRÉREQUIS</span><p>Que tu aies déjà participé à Conversations Inspirantes, à un autre programme de la Fondation ou que ce soit ta première expérience avec nous, tu peux rejoindre L’Ascension.</p><p><strong>Ce qui compte, ce n’est pas d’où tu pars, mais ta volonté de t’engager pleinement dans un travail concret sur tes objectifs, tes choix et ta progression.</strong></p></div>
+
+              <div class="availability-card" aria-live="polite">
+                <div><small>PROCHAINE COHORTE</small><strong>Démarrage immédiat</strong></div>
+                <div class="availability-value" id="ascensionAvailability"><span class="status-dot"></span><strong>Disponibilité à confirmer</strong><small>Aucun nombre n’est affiché sans donnée réelle.</small></div>
+              </div>
+            </div>
+
+            <div class="offer-footer">
+              <a class="btn full ascension-primary-action" href="#" data-action="ascension">Je réserve ma place</a>
+              <p class="offer-note">Ton inscription et ton paiement garantissent ta place. Les inscriptions ferment dès que les 10 places sont réservées.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="comparison-wrap reveal" aria-labelledby="comparisonTitle">
+          <div class="comparison-heading"><span class="eyebrow">EN UN COUP D’ŒIL</span><h3 id="comparisonTitle">Quel parcours correspond à ton besoin aujourd’hui ?</h3></div>
+          <div class="comparison-table" role="table" aria-label="Comparaison des deux parcours">
+            <div class="comparison-row comparison-head" role="row"><div role="columnheader">Critère</div><div role="columnheader">Conversations Inspirantes</div><div role="columnheader">L’Ascension</div></div>
+            <div class="comparison-row" role="row"><div role="cell">Objectif</div><div role="cell">Clarifier et structurer ta progression</div><div role="cell">Approfondir, personnaliser et accélérer ta progression</div></div>
+            <div class="comparison-row" role="row"><div role="cell">Effectif</div><div role="cell">50 bénéficiaires</div><div role="cell"><strong>10 personnes max.</strong></div></div>
+            <div class="comparison-row" role="row"><div role="cell">Coaching collectif</div><div role="cell">1 session</div><div role="cell"><strong>4 sessions</strong></div></div>
+            <div class="comparison-row" role="row"><div role="cell">Mentorat</div><div role="cell">Groupé</div><div role="cell"><strong>Individuel</strong></div></div>
+            <div class="comparison-row" role="row"><div role="cell">Coaching individuel</div><div role="cell">—</div><div role="cell"><strong>2 heures</strong></div></div>
+            <div class="comparison-row" role="row"><div role="cell">Présentiel</div><div role="cell">1 à 2 rencontres</div><div role="cell"><strong>3 rencontres</strong></div></div>
+            <div class="comparison-row" role="row"><div role="cell">Suivi</div><div role="cell">1 an</div><div role="cell">1 an</div></div>
+            <div class="comparison-row" role="row"><div role="cell">Accès</div><div role="cell">Candidature + sélection</div><div role="cell"><strong>Immédiat, sans sélection</strong></div></div>
+            <div class="comparison-row" role="row"><div role="cell">Contribution</div><div role="cell"><strong>Gratuit</strong></div><div role="cell"><strong>90 000 FCFA</strong></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMENT REJOINDRE -->
+    <section class="section section-white" id="rejoindre">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">COMMENT REJOINDRE LE PARCOURS QUI TE CORRESPOND ?</span>
+          <h2>Deux chemins simples.</h2>
+        </div>
+
+        <div class="join-grid">
+          <article class="join-card reveal">
+            <span class="join-kicker">CONVERSATIONS INSPIRANTES</span>
+            <h3>Candidater quand les inscriptions ouvrent</h3>
+            <ol>
+              <li><strong>Prends connaissance de l’ouverture.</strong><span>La Fondation annonce la nouvelle cohorte sur ses réseaux, dans la presse ou par ses canaux de communication.</span></li>
+              <li><strong>Dépose ta candidature sur cette page.</strong><span>Le lien n’est actif que pendant la période annoncée.</span></li>
+              <li><strong>Attends la sélection.</strong><span>Les candidatures sont étudiées et 50 bénéficiaires sont retenus pour la cohorte.</span></li>
+            </ol>
+            <a class="btn full ci-primary-action" href="#" data-action="ci">Être informé(e) de la prochaine ouverture</a>
+          </article>
+
+          <article class="join-card join-card-premium reveal">
+            <span class="join-kicker">CONVERSATIONS INSPIRANTES — L’ASCENSION</span>
+            <h3>Réserver l’une des 10 places</h3>
+            <ol>
+              <li><strong>Vérifie la disponibilité.</strong><span>Le nombre de places est affiché uniquement lorsqu’une donnée réelle est disponible.</span></li>
+              <li><strong>Inscris-toi et règle la contribution.</strong><span>La contribution demandée aux activités de la Fondation est de 90 000 FCFA. Les éventuels frais de transaction sont affichés avant validation du paiement.</span></li>
+              <li><strong>Ta place est confirmée.</strong><span>Une place n’est décomptée qu’après confirmation réelle du paiement. Les inscriptions ferment automatiquement lorsque les 10 places sont prises.</span></li>
+            </ol>
+            <a class="btn full ascension-primary-action" href="#" data-action="ascension">Je veux rejoindre L’Ascension</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
     <section class="section section-soft" id="faq">
-      <div class="container narrow">
-        <div class="section-heading reveal"><span class="eyebrow">FAQ</span><h2>Tu as des questions ?</h2></div>
+      <div class="container faq-layout">
+        <div class="faq-intro reveal">
+          <span class="eyebrow">QUESTIONS FRÉQUENTES</span>
+          <h2>Ce qu’il faut savoir avant de choisir.</h2>
+          <p>Les réponses ci-dessous présentent les modalités actuellement prévues. Les détails opérationnels finaux seront affichés au moment de l’ouverture.</p>
+        </div>
         <div class="faq-list">
-          <details class="reveal"><summary>Dois-je déjà avoir un projet professionnel parfaitement défini ?</summary><p>Non. Tu peux justement rejoindre le parcours pour clarifier une direction, arbitrer entre plusieurs possibilités ou mieux comprendre ce qui doit venir ensuite.</p></details>
-          <details class="reveal"><summary>Est-ce seulement du développement personnel ?</summary><p>Non. Le travail de connaissance de soi sert un objectif professionnel : mieux décider, mieux se positionner, mieux rendre sa valeur visible, mieux mobiliser son réseau et passer à l’action.</p></details>
-          <details class="reveal"><summary>Comment fonctionne Conversations Inspirantes sans contribution financière ?</summary><p>Les candidatures ouvrent à des périodes précises. Tu candidates via cette page, puis la Fondation étudie les candidatures et sélectionne 50 bénéficiaires pour la cohorte.</p></details>
-          <details class="reveal"><summary>Quelle est la différence avec L’Ascension ?</summary><p>L’Ascension est le parcours avancé, conçu pour approfondir et accélérer la mise en mouvement du potentiel et de l’excellence. Il est limité à 10 personnes par cohorte et une contribution de 90 000 FCFA est demandée aux activités de la Fondation.</p></details>
-          <details class="reveal"><summary>Comment fonctionne le décompte des 10 places dans cette version test ?</summary><p>Chaque inscription test validée pour L’Ascension retire automatiquement une place dans ce navigateur. À 0, le bouton est désactivé. En production, le compteur devra être relié à la base d’inscriptions et à la confirmation réelle du paiement pour être commun à tous les visiteurs.</p></details>
-          <details class="reveal"><summary>Y a-t-il du mentorat et une expérience collective ?</summary><p>Oui. Le mentorat, les échanges et la dynamique de réseau font partie du positionnement du programme. Les formats, fréquences et modalités exactes seront précisés pour chaque cohorte.</p></details>
-          <details class="reveal"><summary>Combien de temps faut-il prévoir ?</summary><p>[DURÉE, RYTHME ET CHARGE HEBDOMADAIRE À COMPLÉTER AVANT MISE EN PRODUCTION.]</p></details>
-          <details class="reveal"><summary>Quels moyens de paiement sont acceptés pour L’Ascension ?</summary><p>[À COMPLÉTER selon la solution de paiement retenue par la Fondation.]</p></details>
+          <details class="reveal"><summary>Dois-je déjà avoir un projet professionnel parfaitement défini ?</summary><p>Non. Tu peux justement rejoindre le parcours pour clarifier une direction, arbitrer entre plusieurs possibilités ou mieux comprendre la prochaine étape qui te correspond.</p></details>
+          <details class="reveal"><summary>Le programme s’adresse-t-il uniquement aux personnes en reconversion ?</summary><p>Non. Il peut répondre à des besoins d’évolution ou de promotion, d’insertion professionnelle, de reconversion, de projet entrepreneurial, de repositionnement, de visibilité ou de recherche d’un cap plus cohérent.</p></details>
+          <details class="reveal"><summary>Est-ce du développement personnel ?</summary><p>Non, plutôt un recentrage et un réalignement. Le programme part de la connaissance de soi pour aller vers des décisions, un positionnement, une visibilité, un réseau et des actions professionnelles concrètes.</p></details>
+          <details class="reveal"><summary>Y a-t-il une contribution financière pour Conversations Inspirantes ?</summary><p>Non. Le parcours est accessible sans contribution financière pour les bénéficiaires retenus, grâce au soutien des donateurs et sponsors. L’accès se fait sur candidature et sélection de 50 personnes par cohorte.</p></details>
+          <details class="reveal"><summary>Quelle différence avec Conversations Inspirantes — L’Ascension ?</summary><p>L’Ascension est le parcours avancé : groupe limité à 10 personnes, 4 sessions de coaching collectif, mentorat individuel, 2 heures de coaching individuel, 3 rencontres en présentiel, ressources complémentaires hebdomadaires et disponibilité digitale entre les sessions.</p></details>
+          <details class="reveal"><summary>Pourquoi choisir L’Ascension alors que je peux candidater à Conversations Inspirantes ?</summary><p>Parce que les deux expériences ne répondent pas au même niveau d’accompagnement. Conversations Inspirantes propose un cadre structuré accessible sur sélection. L’Ascension est ouverte sans sélection, en effectif réduit, avec davantage de coaching, de personnalisation et de disponibilité pour travailler plus finement tes objectifs.</p></details>
+          <details class="reveal"><summary>Faut-il avoir déjà suivi Conversations Inspirantes pour rejoindre L’Ascension ?</summary><p>Non. L’Ascension est ouverte aux personnes ayant déjà participé à un programme de la Fondation comme à celles qui découvrent la Fondation pour la première fois.</p></details>
+          <details class="reveal"><summary>Comment le nombre de places de L’Ascension est-il calculé ?</summary><p>Le site n’affiche un nombre que s’il provient d’une valeur administrée ou d’une source technique réelle. En production, une place devra être décomptée uniquement après confirmation effective de l’inscription et du paiement.</p></details>
+          <details class="reveal"><summary>Quels moyens de paiement seront acceptés ?</summary><p>La solution de paiement retenue sera indiquée avant l’ouverture de l’inscription. Les éventuels frais de transaction seront clairement présentés avant validation du paiement.</p></details>
         </div>
       </div>
     </section>
 
-    <!-- 15. CTA FINAL PARTICIPANTS -->
+    <!-- CTA FINAL -->
     <section class="final-cta section-orange">
       <div class="container final-grid reveal">
-        <div><span class="eyebrow light">TON PROCHAIN CHAPITRE PROFESSIONNEL</span><h2>Tu peux commencer ici.</h2><p>Choisis la voie qui correspond à ton niveau d’engagement et à la manière dont tu veux avancer.</p></div>
-        <div class="final-actions"><button class="btn btn-light" data-open-dialog="candidateDialog">Je candidate à CI</button><button class="btn btn-outline-light ascension-register" data-open-dialog="ascensionDialog">Je rejoins L’Ascension — <span class="remaining-count">10</span> place(s)</button></div>
+        <div><span class="eyebrow light">TON PROCHAIN CHAPITRE PROFESSIONNEL</span><h2>Tu peux commencer ici.</h2><p>Tu n’as pas besoin d’avoir toutes les réponses. Choisis maintenant la voie qui correspond à ton niveau d’engagement et à la manière dont tu veux avancer.</p></div>
+        <div class="final-actions">
+          <a class="btn btn-light ci-primary-action" href="#" data-action="ci">Être informé(e) de l’ouverture</a>
+          <a class="btn btn-outline-light ascension-primary-action" href="#" data-action="ascension">Je réserve ma place pour L’Ascension</a>
+        </div>
       </div>
     </section>
 
-    <!-- 16. DONATEURS / SPONSORS : volontairement après le parcours de conversion participant -->
+    <!-- DONATEURS / SPONSORS -->
     <section class="section support-section section-white" id="soutenir">
       <div class="container">
         <div class="section-heading reveal">
-          <span class="eyebrow">FAIRE GRANDIR L’IMPACT</span>
-          <h2>Tu veux rendre cette expérience possible pour d’autres talents ?</h2>
-          <p>Les donateurs, sponsors et partenaires permettent à la Fondation d’élargir l’accès au programme, de renforcer le mentorat et de prolonger l’impact au-delà des modules.</p>
+          <span class="eyebrow">DONATEURS & SPONSORS</span>
+          <h2>Rendre Conversations Inspirantes accessible à davantage de talents.</h2>
+          <p>Le parcours Conversations Inspirantes est proposé sans contribution financière aux bénéficiaires sélectionnés grâce au soutien de donateurs et de sponsors. Soutenir le programme, c’est contribuer à maintenir cette accessibilité, renforcer l’accompagnement et prolonger l’impact professionnel du parcours.</p>
         </div>
+
         <div class="support-grid">
           <article class="support-card reveal">
-            <span class="offer-label">DONATEURS</span>
-            <h3>Faire un don à la Fondation</h3>
-            <p class="compact">Chaque contribution peut soutenir l’accès de nouveaux bénéficiaires, les ressources pédagogiques, le mentorat, la mise en réseau et le suivi post-parcours.</p>
-            <div class="support-amounts"><span>10 000 FCFA</span><span>25 000 FCFA</span><span>50 000 FCFA</span><span>Montant libre</span></div>
-            <button class="btn full" data-open-dialog="donorDialog">Je souhaite faire un don</button>
-            <p class="offer-note">Version test : aucune transaction financière n’est effectuée.</p>
+            <span class="offer-label">FAIRE UN DON</span>
+            <h3>Donner à de nouveaux talents les moyens d’avancer.</h3>
+            <p>Une contribution financière peut soutenir l’accès aux cohortes, les ressources pédagogiques, le mentorat, le suivi des bénéficiaires, les outils numériques et la continuité du programme.</p>
+            <a class="btn full donor-action" href="#" data-action="donor">Je souhaite faire un don</a>
           </article>
+
           <article class="support-card support-card-sponsor reveal">
-            <span class="offer-label">SPONSORS & PARTENAIRES</span>
-            <h3>Construire un partenariat utile et visible</h3>
-            <p class="compact">Un partenariat peut être financier, en nature ou stratégique. Il peut soutenir les prochaines cohortes, la visibilité des bénéficiaires, le mentorat, les opportunités professionnelles ou la logistique des temps forts.</p>
-            <div class="sponsor-types">
-              <div><strong>Soutien financier</strong><span>Contribution à un poste, une cohorte ou une action identifiée.</span></div>
-              <div><strong>Soutien en nature</strong><span>Transport, restauration, kits, impression, photo/vidéo ou moyens techniques.</span></div>
-              <div><strong>Soutien stratégique</strong><span>Mentorat, opportunités, réseautage, accompagnement ou mise en relation.</span></div>
-            </div>
-            <button class="btn full" data-open-dialog="sponsorDialog">Je propose un partenariat</button>
+            <span class="offer-label">DEVENIR SPONSOR / PARTENAIRE</span>
+            <h3>Associer ton institution à un programme d’impact.</h3>
+            <p>Le partenariat peut être financier, en nature ou stratégique : équipements, prestations, communication, mentorat, opportunités professionnelles, réseautage, expertise ou mise en relation.</p>
+            <a class="btn full sponsor-action" href="#" data-action="sponsor">Je souhaite proposer un partenariat</a>
           </article>
         </div>
+
+        <div class="impact-note reveal"><strong>DEVENIR PARTENAIRE D’IMPACT</strong><p>Associer son institution à Conversations Inspirantes, c’est soutenir une démarche de développement des talents, de croissance professionnelle, de mentorat, de réseau et de passage à l’action.</p></div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-grid">
-      <img src="assets/logo-hysteresis.png" alt="Fondation Hystérésis" />
-      <div><strong>Fondation Hystérésis</strong><p>Abomey-Calavi, Arrondissement Sèmè, Lot K-1614, Maison Zoumarou</p><p>contact@fondationhysteresis.bj</p></div>
-      <div class="footer-test"><strong>Version test</strong><p>Les formulaires et le compteur servent à tester l’expérience avant connexion au système réel.</p><button class="reset-test" type="button">Réinitialiser les inscriptions test</button></div>
+      <a class="footer-brand" href="#top"><img src="assets/logo-hysteresis.png" alt="Fondation Hystérésis" /></a>
+      <div><strong>Fondation Hystérésis</strong><p>Conversations Inspirantes — clarifier, valoriser, se mettre en mouvement.</p></div>
+      <div><strong>Contact</strong><p><a href="mailto:contact@fondationhysteresis.bj">contact@fondationhysteresis.bj</a></p></div>
     </div>
+    <div class="container footer-bottom"><span>© <span id="year"></span> Fondation Hystérésis</span><a href="#top">Retour en haut ↑</a></div>
   </footer>
 
-  <dialog id="candidateDialog" class="modal">
-    <form method="dialog" class="modal-card" id="candidateForm">
+  <dialog id="actionDialog" class="modal">
+    <div class="modal-card">
       <button type="button" class="modal-close" data-close-dialog aria-label="Fermer">×</button>
-      <span class="eyebrow">CANDIDATURE</span>
-      <h2>Conversations Inspirantes</h2>
-      <p>Dépose tes informations pour simuler une candidature à la prochaine cohorte.</p>
-      <label>Nom et prénom<input required name="name" autocomplete="name" /></label>
-      <label>Email<input required type="email" name="email" autocomplete="email" /></label>
-      <label>Téléphone<input required name="phone" autocomplete="tel" /></label>
-      <label>Ton objectif professionnel<textarea required name="goal" rows="4"></textarea></label>
-      <button class="btn full" type="submit">Envoyer ma candidature test</button>
-      <p class="form-status" aria-live="polite"></p>
-    </form>
-  </dialog>
-
-  <dialog id="ascensionDialog" class="modal">
-    <form method="dialog" class="modal-card" id="ascensionForm">
-      <button type="button" class="modal-close" data-close-dialog aria-label="Fermer">×</button>
-      <span class="eyebrow">INSCRIPTION TEST</span>
-      <h2>Conversations Inspirantes L’Ascension</h2>
-      <p><strong><span class="remaining-count">10</span> place(s) restante(s)</strong> sur 10. Une inscription validée retire automatiquement une place.</p>
-      <label>Nom et prénom<input required name="name" autocomplete="name" /></label>
-      <label>Email<input required type="email" name="email" autocomplete="email" /></label>
-      <label>Téléphone<input required name="phone" autocomplete="tel" /></label>
-      <label class="consent"><input required type="checkbox" name="confirm" /> <span>Je confirme vouloir simuler une réservation de place à 90 000 FCFA.</span></label>
-      <button class="btn full ascension-submit" type="submit">Confirmer mon inscription test</button>
-      <p class="form-status" aria-live="polite"></p>
-    </form>
-  </dialog>
-
-  <dialog id="donorDialog" class="modal">
-    <form method="dialog" class="modal-card" id="donorForm">
-      <button type="button" class="modal-close" data-close-dialog aria-label="Fermer">×</button>
-      <span class="eyebrow">SOUTENIR LA FONDATION</span>
-      <h2>Faire un don</h2>
-      <p>Cette version test enregistre uniquement une intention de don. Aucun paiement n’est déclenché.</p>
-      <label>Nom et prénom / Organisation<input required name="name" autocomplete="name" /></label>
-      <label>Email<input required type="email" name="email" autocomplete="email" /></label>
-      <label>Téléphone<input name="phone" autocomplete="tel" /></label>
-      <label>Montant envisagé
-        <select required name="amount"><option value="">Choisir un montant</option><option value="10000">10 000 FCFA</option><option value="25000">25 000 FCFA</option><option value="50000">50 000 FCFA</option><option value="100000">100 000 FCFA</option><option value="libre">Montant libre / à convenir</option></select>
-      </label>
-      <label>Message ou précision<textarea name="message" rows="3" placeholder="Facultatif"></textarea></label>
-      <label class="consent"><input required type="checkbox" name="confirm" /> <span>J’accepte d’être recontacté(e) par la Fondation pour finaliser mon don.</span></label>
-      <button class="btn full" type="submit">Enregistrer mon intention de don</button>
-      <p class="form-status" aria-live="polite"></p>
-    </form>
-  </dialog>
-
-  <dialog id="sponsorDialog" class="modal">
-    <form method="dialog" class="modal-card" id="sponsorForm">
-      <button type="button" class="modal-close" data-close-dialog aria-label="Fermer">×</button>
-      <span class="eyebrow">SPONSOR & PARTENAIRE</span>
-      <h2>Construire un partenariat</h2>
-      <p>Indiquez comment votre organisation souhaite soutenir Conversations Inspirantes. L’équipe de la Fondation pourra ensuite vous recontacter avec les modalités adaptées.</p>
-      <label>Organisation<input required name="organization" autocomplete="organization" /></label>
-      <label>Nom du contact<input required name="contactName" autocomplete="name" /></label>
-      <label>Email professionnel<input required type="email" name="email" autocomplete="email" /></label>
-      <label>Téléphone<input required name="phone" autocomplete="tel" /></label>
-      <label>Type d’appui envisagé
-        <select required name="supportType"><option value="">Sélectionner</option><option value="financier">Soutien financier</option><option value="nature">Soutien en nature</option><option value="strategique">Soutien stratégique / mentorat / opportunités</option><option value="mixte">Partenariat mixte</option><option value="autre">Autre proposition</option></select>
-      </label>
-      <label>Votre proposition / vos besoins<textarea required name="message" rows="4" placeholder="Ex. domaine de soutien, montant ou ressource envisagée, type d’opportunités, souhait de visibilité..."></textarea></label>
-      <label class="consent"><input required type="checkbox" name="confirm" /> <span>J’accepte d’être recontacté(e) par la Fondation au sujet de cette demande de partenariat.</span></label>
-      <button class="btn full" type="submit">Envoyer ma demande de partenariat</button>
-      <p class="form-status" aria-live="polite"></p>
-    </form>
+      <span class="eyebrow" id="dialogEyebrow">INFORMATION</span>
+      <h2 id="dialogTitle">Lien en cours de configuration</h2>
+      <p id="dialogText">Cette action sera reliée au formulaire ou au paiement définitif avant la mise en ligne.</p>
+      <a class="btn full" id="dialogLink" href="#" hidden>Continuer</a>
+      <button class="btn btn-ghost full" type="button" data-close-dialog>Fermer</button>
+    </div>
   </dialog>
 
   <script src="script.js"></script>
